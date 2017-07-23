@@ -16,20 +16,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="@{student.name}"/>
+            android:text="@{student.name}"
+            android:layout_margin="8dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{student.age}"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_margin="8dp"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(student.score)}"
+            android:textSize="20sp"
+            android:layout_margin="8dp"/>
 
         <Button android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button"
-            android:textAllCaps="false"/>
-
+            android:textAllCaps="false"
+            android:onClick=""/>
     </LinearLayout>
 
 </layout>

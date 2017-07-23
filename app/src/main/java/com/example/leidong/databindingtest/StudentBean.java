@@ -14,6 +14,9 @@ public class StudentBean extends BaseObservable{
     @Bindable
     private String age;
 
+    @Bindable
+    private int score;
+
     public String getName() {
         return name;
     }
@@ -30,5 +33,14 @@ public class StudentBean extends BaseObservable{
     public void setAge(String age) {
         this.age = age;
         notifyPropertyChanged(BR.age);
+    }
+
+    public int getScore(){
+        return score;
+    }
+
+    public void setScore(int score){
+        this.score = score;
+        notifyPropertyChanged(BR.score);
     }
 }
